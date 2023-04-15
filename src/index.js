@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {Howl, Howler} from 'howler';
@@ -41,7 +43,7 @@ class Square extends React.Component {
         if (squares[i].playing) {
           for(let j=0; j<squares.length; j++) {
             if (squares[j].playing) {
-              console.log(i);
+              squares[j].sound.stop();
               squares[j].sound.play();
             }
           }
@@ -78,5 +80,6 @@ class Square extends React.Component {
   // ========================================
   
   const root = ReactDOM.createRoot(document.getElementById("root"));
-  root.render(<Board />);
+  root.render(<Board/>);
+  
   
