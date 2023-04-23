@@ -6,6 +6,7 @@ import {Howl, Howler} from 'howler';
 import './index.css';
 import play from './play.png'
 import pause from './pause.png'
+import Grid from './grid.js';
 
 class Square extends React.Component {
     playOrPause() {
@@ -77,9 +78,20 @@ class Square extends React.Component {
       );
     }
   }
+
+  class Player extends React.Component {
+    render () {
+      return (
+        <div>
+          <Board/>
+          <Grid/>
+        </div>
+      )
+    }
+  }
   // ========================================
   
   const root = ReactDOM.createRoot(document.getElementById("root"));
-  root.render(<Board/>);
+  root.render(<Player/>);
   
   
