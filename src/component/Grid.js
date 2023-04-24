@@ -1,8 +1,8 @@
-import "./index.css";
+import "../index.css";
 import React from 'react';
 import {Howl, Howler} from 'howler';
-import play from './play.png'
-import pause from './pause.png'
+import play from '../play.png'
+import pause from '../pause.png'
 
 class GridSquare extends React.Component {
     render() {
