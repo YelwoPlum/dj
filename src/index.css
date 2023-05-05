@@ -32,6 +32,17 @@ body {
     text-align: center;
   }
 
+  .grid-square{
+    height: 60px;
+    width: 60px;
+  }
+
+  .active {
+    height: 60px;
+    width: 60px;
+    border-color:  green;
+  }
+
   img {
     width: auto;
   }
